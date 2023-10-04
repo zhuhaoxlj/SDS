@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/openLibraryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#12355c"
+        android:textSize="26dp"
+        android:layout_margin="20dp"
+        android:text="XUI"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/open_library_card_border"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/openLibraryContent"
+            android:layout_width="wrap_content"
+            android:text="The following software may be included in this product: dagger. This software contains ths following license and notice below:\nThe following software may be included in this product: dagger. This software contains ths following license and notice below:"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

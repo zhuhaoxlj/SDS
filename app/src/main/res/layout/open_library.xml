@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/virtualStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal" />
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        app:tb_dividerColor="#F3F3F3"
+        android:id="@+id/openLibrariesTitleBar"
+        app:tb_leftImageResource="@drawable/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tb_actionPadding="20dp"
+        app:tb_sideTextPadding="20dp"
+        app:tb_actionTextColor="@color/black"
+        app:tb_titleTextColor="@color/black"
+        app:tb_titleText="Libraries We Use" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#12355c"
+                android:textSize="36sp"
+                android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:text="Libraries We Use"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:text="The following sets forth attribution notices for third party software that may be contained in portions of SDS.We thank the open source community for all of their contributions."
+                tools:ignore="HardcodedText" />
+            <com.lindum.sds.MyOpenLibraryList
+                android:id="@+id/openLibrariesList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
